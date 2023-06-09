@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <!-- *Styles -->
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!-- Lokal CSS -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="main-page" href="../index.html">Main page</a>
+    <div class="wrapper">
+      <h1>Create an Account</h1>
+      <!-- Form -->
+      <form method="gets">
+        <div class="form_content">
+          <!-- First Name -->
+          <label for="firstname">
+            <div class="form-title">First Name</div>
+            <input
+              class="input"
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="Enter First Name"
+              required
+            />
+          </label>
+
+          <!-- Last Name  -->
+          <label for="lastname">
+            <div class="form-title">Last Name</div>
+            <input
+              class="input"
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Enter Last Name"
+              required
+            />
+          </label>
+
+          <!-- Email -->
+          <label for="email">
+            <div class="form-title">Email</div>
+            <input
+              class="input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+              required
+            />
+          </label>
+
+          <!-- Password -->
+          <label for="password">
+            <div class="form-title">Password</div>
+            <input
+              class="input"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Create password"
+            />
+          </label>
+
+          <!-- Confirm password -->
+          <label for="confirm-password">
+            <div class="form-title">Confirm Password</div>
+            <input
+              class="input"
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              placeholder="Confirm password"
+            />
+          </label>
+
+          <!-- Gender -->
+          <div class="radio_content">
+            <label for="male">
+              <input
+                type="radio"
+                class="radio"
+                name="gender"
+                id="male-radio"
+                value="male"
+                checked
+              />
+              <span class="radio_text">Male</span>
+            </label>
+            <label for="female">
+              <input
+                type="radio"
+                class="radio"
+                name="gender"
+                id="female-radio"
+                value="female"
+              />
+              <span class="radio_text">Female</span>
+            </label>
+          </div>
+
+          <!-- Age -->
+          <label for="age">
+            <div class="form-title">Age</div>
+            <input class="input" type="number" name="age" id="age" />
+          </label>
+
+          <!-- Cours -->
+          <label for="cours">
+            <div class="form-title">Cours</div>
+            <select class="input" name="cours" id="cours">
+              <option value="Front-End">Front-End</option>
+              <option value="Back-End">Back-End</option>
+              <option value="Project Management">Project Management</option>
+              <option value="QA Manual">QA Manual</option>
+            </select>
+          </label>
+
+          <!-- Adress -->
+          <label for="adress">
+            <div class="form-title">Adress</div>
+            <textarea
+              class="textarea"
+              name="adress"
+              id="adress"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+
+          <!-- Checkbox -->
+          <label class="checkbox" for="policy">
+            <input type="checkbox" name="policy" id="policy" required />
+            <div class="checkbox_text">
+              I confirm that I accept
+              <a href="https://policies.google.com/terms?hl=en-US"
+                >Terms of Use</a
+              >
+              and
+              <a href="https://policies.google.com/privacy?hl=en-US"
+                >Privacy Policy</a
+              >
+            </div>
+          </label>
+          <!-- Buttons -->
+          <div class="form_footer">
+            <button class="button" type="submit">
+              <span>Submit</span>
+            </button>
+            <button class="button" type="reset">
+              <span>Reset</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
