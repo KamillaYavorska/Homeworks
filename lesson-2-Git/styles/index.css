@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "Oswaldt";
+  src: url(../assets/fonts/oswaldt.ttf);
+}
+
+/* Image */
+img {
+  width: 100%;
+}
+
+/* Wrapper (container)*/
+.wrapper {
+  text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.title {
+  font-family: "Oswaldt";
+  color: #2252a4;
+  padding: 20px;
+}
+
+.image {
+  height: 400px;
+  width: 600px;
+}
