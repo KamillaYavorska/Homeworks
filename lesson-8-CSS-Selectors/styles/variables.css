@@ -1,0 +1,20 @@
+:root {
+  /* Colours */
+  --c-hf-background: #4A4F56;
+  --c-text-checked: #9B96AC;
+  --c-not-checked: #88839E;
+  --c-background: #3B3F45;
+  --c-checked: #7A7593;
+  --c-white: #FFFFFF;
+  --c-peach: #FF8984;
+  --c-black: #000000;
+  --c-hover: #625E77;
+
+
+
+  /* Fonts */
+  --f-family: 'Roboto', sans-serif;
+  --f-heading: 48px;
+  --f-base: 18px;
+}
+
