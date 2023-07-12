@@ -1,0 +1,13 @@
+.button {
+  background-color: $c-white;
+  font-family: $ff-open-sans;
+  border: 1px solid $c-gold;
+  text-transform: uppercase;
+  color: $c-dark-gray;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 14px;
+  padding: 5px 10px;
+  font-weight: 700;
+  cursor: pointer;
+}

@@ -1,0 +1,90 @@
+.banner {
+  display: flex;
+  &__wrapper {
+    padding-bottom: 50px;
+    padding-top: 120px;
+    max-width: 1030px;
+    @include flex;
+    width: 100%;
+  }
+
+  &__photo {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-height: 430px;
+    max-width: 430px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    &__wrapper1 {
+      border-right: 1px solid $c-gold;
+      border-top: 1px solid $c-gold;
+      position: absolute;
+      @include size(100);
+      right: 0;
+      top: 0;
+    }
+    &__wrapper2 {
+      border-left: 1px solid $c-gold;
+      border-top: 1px solid $c-gold;
+      position: absolute;
+      @include size(100);
+      left: 0;
+      top: 0;
+    }
+    &__wrapper3 {
+      border-bottom: 1px solid $c-gold;
+      border-left: 1px solid $c-gold;
+      position: absolute;
+      @include size(100);
+      bottom: 0;
+      left: 0;
+    }
+    &__wrapper4 {
+      border-bottom: 1px solid $c-gold;
+      border-right: 1px solid $c-gold;
+      position: absolute;
+      @include size(100);
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &__info {
+    @include flex(center);
+    max-width: 430px;
+    width: 100%;
+    &__title {
+      text-transform: capitalize;
+      color: $c-dark-gray;
+      text-align: center;
+    }
+    &__line {
+      background-color: $c-gold;
+      text-align: center;
+      max-width: 100px;
+      margin-top: 30px;
+      height: 1px;
+      width: 100%;
+    }
+
+    &__proffesion {
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    &__social {
+      @include flex;
+      gap: 5px;
+    }
+
+    &__text {
+      font-family: 'raleway';
+      text-align: center;
+      font-weight: 500;
+      padding: 50px 0;
+    }
+  }
+}

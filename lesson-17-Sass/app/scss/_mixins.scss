@@ -1,0 +1,35 @@
+// * Generate size
+@mixin size($px) {
+  width: $px + px;
+  height: $px + px;
+}
+
+// * Flex
+@mixin flex($center: null, $endMode: null) {
+  align-items: center;
+  display: flex;
+
+  @if $center {
+    justify-content: center;
+  } @else {
+    justify-content: space-between;
+  }
+
+  @if $center {
+    flex-direction: column;
+  } @else {
+    flex-direction: row;
+  }
+}
+
+// For fonts
+@mixin font-face($fontname, $fontfile, $fontweight: normal, $fontstyle: normal) {
+	@font-face {
+		font-family: $fontname;
+		src: url('./assets/font/Raleway-Medium.ttf') format('truetype');
+		font-weight: $fontweight;
+		font-style: $fontstyle;
+	}
+}
+
+

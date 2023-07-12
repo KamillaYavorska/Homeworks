@@ -1,0 +1,24 @@
+// * Colours
+$c-light-gray: #898f8f;
+$c-dark-gray: #666666;
+$c-gold: #ffcc00;
+$c-gray: #333333;
+$c-white: #fff;
+$c-black: #000;
+
+// * Fonts size
+$fs-base: 14;
+
+// *Font family
+$ff-open-sans: 'Open Sans', sans-serif;
+$ff-base: "Roboto", sans-serif;
+// $ff-raleway: @include font-face(Raleway-Medium, 500, normal);
+
+// * Bezier
+$b-normal: cubic-bezier(0.4, 0, 0.2, 1);
+
+// * Transition
+$t-normal: 0.35s $b-normal;
+
+// * Box Shadow
+$bs-normal: 1px 1px 5px rgba($c-black, 0.1);

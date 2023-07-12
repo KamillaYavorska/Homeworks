@@ -1,0 +1,47 @@
+.header {
+  position: relative;
+  padding-bottom: 15px;
+  
+  &__wrapper {
+    border-bottom: 1px solid $c-gold;
+    @include flex(center);
+    padding-bottom: 50px;
+    padding-top: 120px;
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    color: $c-light-gray;
+    line-height: 24px;
+    font-size: em(18);
+    font-weight: 500;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: em(60);
+    line-height: 66px;
+    margin-top: 15 px;
+    font-weight: 900;
+    color: $c-gold;
+  }
+  &__icon {
+    background-color: $c-white;
+    position: absolute;
+    padding-right: 5px;
+    padding-left: 5px;
+    @include size(25);
+    z-index: 3;
+    bottom: 0;
+  }
+   &__line {
+    border-bottom: 1px solid $c-gold;
+    position: absolute;
+    max-width: 450px;
+    bottom: 15px;
+    width: 100%;
+   }
+}
