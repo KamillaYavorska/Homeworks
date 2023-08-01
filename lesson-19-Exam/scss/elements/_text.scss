@@ -1,0 +1,74 @@
+.h1 {
+  font-family: $ff-worksans;
+  @include font-size(80px);
+  line-height: 110%;
+  color: $c-purple;
+  font-weight: 700;
+
+  @media (max-width: 768px) {
+    @include font-size(72px);
+    text-align: center;
+  }
+
+  @media (max-width: 550px) {
+    @include font-size(48px);
+    text-align: center;
+  }
+}
+
+.big-title {
+  font-family: $ff-worksans;
+  @include font-size(40px);
+  line-height: 130%;
+  color: $c-purple;
+  font-weight: 700;
+}
+
+.gr {
+  color: $c-dark-grey;
+}
+
+.title {
+  font-family: $ff-montserrat;
+  @include font-size(20px);
+  line-height: 160%;
+  color: $c-purple;
+  font-weight: 600;
+}
+
+.text {
+  font-family: $ff-montserrat;
+  @include font-size(18px);
+  color: $c-dark-grey;
+  line-height: 160%;
+  font-weight: 500;
+}
+
+.text-16 {
+  font-family: $ff-montserrat;
+  @include font-size(16px);
+  color: $c-dark-grey;
+  line-height: 160%;
+  font-weight: 500;
+}
+
+.small-text {
+  font-family: $ff-montserrat;
+  @include font-size(16px);
+  line-height: 160%;
+  color: $c-purple;
+  font-weight: 400;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw500 {
+  font-weight: 500;
+} 
+
+.lh180 {
+  line-height: 180%;
+}
+

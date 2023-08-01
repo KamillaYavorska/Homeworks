@@ -1,0 +1,37 @@
+.burger {
+  background-color: transparent;
+  position: relative;
+  border-radius: 3px;
+  padding: 10px 5px; 
+  cursor: pointer;
+  z-index: 901;
+  border: none;
+
+&--open {
+  & > .burger__line {
+    transform: rotate(45deg) translateY(7px);
+
+    &:nth-child(2) {
+      transform: rotate(-45deg) translateY(-7px);
+    }
+
+    &:last-child {
+      transform: rotate(0);
+      opacity: 0;
+    }
+  }
+}
+
+  &__line {
+    background-color: $c-purple;
+    transition: $t-normal;
+    margin-bottom: 8px; 
+    display: block;
+    width: 34px;
+    height: 2px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

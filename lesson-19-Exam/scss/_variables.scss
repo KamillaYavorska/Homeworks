@@ -1,0 +1,43 @@
+// * Colours
+$c-testimonials-bgc: #ccddff;
+$c-instagram-hover: #c13584;
+$c-twitter-hover: #00acee;
+$c-violet-middle: #8a40ee;
+$c-light-violet: #f6f0fd;
+$c-storage-bgc: #fde8f5;
+$c-pink-middle: #eb4bab;
+$c-light-green: #f0faf9;
+$c-light-pink: #fef0f8;
+$c-light-blue: #eaf6fc;
+$c-fb-hover: #3b5998;
+$c-dark-grey: #4b5d68;
+$c-lilac: #9c69e2;
+$c-purple: #212353;
+$c-black: #000000;
+$c-white: #ffffff;
+$c-pink: #f063b8;
+$c-grey: #d9d9d9;
+
+// *Font family
+$ff-montserrat: "Montserrat", sans-serif;
+$ff-worksans: "WorkSans", sans-serif;
+$ff-rubik: "Rubik", sans-serif;
+
+// * Fonts size
+$fs-base: 16;
+
+// * Bezier
+$b-normal: cubic-bezier(0.4, 0, 0.2, 1);
+
+// * Transition
+$t-normal: 0.35s $b-normal;
+
+// *Media
+$mobile-screen: 320px;
+$tablet-screen: 768px;
+$desktop-screen: 1440px;
+
+// *Media Padding
+$desktop-inline-padding: 135px;
+$tablet-inline-padding: 34px;
+$mobile-inline-padding: 10px;

@@ -1,0 +1,44 @@
+svg path {
+  transition: all ease 0.3s;
+}
+
+// Facebook SVG
+.facebook:hover path {
+  fill: $c-fb-hover;
+  transition: all ease 0.3s;
+}
+
+.facebook:hover circle {
+  transition: $t-normal;
+  stroke: $c-fb-hover;
+  fill: $c-white;
+  opacity: 1;
+  
+}
+
+// Twitter SVG
+.twitter:hover path {
+  fill: $c-twitter-hover;
+  transition: $t-normal;
+}
+
+.twitter:hover circle {
+  transition: all ease 0.3s;
+  stroke: $c-twitter-hover;
+  fill: $c-white;
+  opacity: 1;
+}
+
+// Instagram SVG
+.instagram:hover path {
+  fill: $c-instagram-hover;
+  transition: $t-normal;
+}
+
+.instagram:hover circle {
+  stroke: $c-instagram-hover;
+  transition: all ease 0.3s;
+  fill: $c-white;
+  opacity: 1;
+}
+

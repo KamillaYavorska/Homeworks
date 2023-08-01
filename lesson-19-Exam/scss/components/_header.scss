@@ -1,0 +1,51 @@
+.header {
+  background-color: $c-white;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+
+  &__wrapper {
+    max-width: 1240px;
+    padding: 0 35px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 100%;
+  }
+
+  &__logo {
+    margin-right: 120px;
+    max-height: 35px;
+    max-width: 44px;
+    width: 100%;
+  }
+
+  &__block {
+    align-items: center;
+    display: flex;
+  }
+
+  &__navigation {
+    transition: $t-normal;
+
+    @media screen and (max-width: 768px) {
+     display: none;
+    }
+
+    &--show {
+     display: block;
+    }
+  }
+
+  &__burger {
+    margin-left: 35px;
+    display: none;
+
+    @media screen and (max-width: 768px) {
+     display: inline-block;
+    }
+  }
+}

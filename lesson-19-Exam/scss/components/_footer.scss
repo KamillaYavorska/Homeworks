@@ -1,0 +1,110 @@
+.footer {
+  &__header {
+    justify-content: space-between;
+    padding-bottom: 100px;
+    align-items: center;
+    display: flex;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 50px;
+    }
+
+    &__information {
+      &__title {
+        padding-bottom: 20px;
+        text-align: center;
+      }
+
+      &__text {
+        @media (max-width: 768px) {
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+    &__button {
+      display: flex;
+      gap: 30px;
+
+      @media (max-width: 550px) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__container {
+    justify-content: space-between;
+    padding-bottom: 100px;
+    display: flex;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      display: block;
+    }
+
+    &__logo {
+      padding-right: 20px;
+      max-height: 35px;
+      max-width: 49px;
+    }
+
+    &__item {
+      &__logo {
+        padding-bottom: 60px;
+        align-items: center;
+        display: flex;
+      }
+
+      &__title {
+        padding-bottom: 30px;
+      }
+
+      &__list {
+        padding-bottom: 10px;
+      }
+
+      &__content {
+        display: flex;
+        gap: 15px;
+      }
+
+      &__email {
+        padding: 10px 0;
+      }
+
+      &__adress {
+        font-weight: 500;
+      }
+
+      &__phone {
+        display: block;
+      }
+    }
+  }
+
+  &__link {
+    padding-bottom: 10px;
+  }
+
+  &__social-media {
+    cursor: pointer;
+  }
+
+  &__license {
+    padding-bottom: 120px;
+    max-width: 275px;
+
+    &__text {
+      font-family: $ff-montserrat;
+      @include font-size(12px);
+      letter-spacing: 0.12px;
+      line-height: 180%;
+      color: $c-purple;
+      font-weight: 300;
+    }
+  }
+}

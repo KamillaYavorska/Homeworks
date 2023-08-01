@@ -1,0 +1,11 @@
+.link {
+  font-family: $ff-montserrat;
+  @include font-size(16px);
+  color: $c-dark-grey;
+  line-height: 160%;
+  font-weight: 500;
+
+  &:hover {
+    color: $c-violet-middle;
+  }
+}

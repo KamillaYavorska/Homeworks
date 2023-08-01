@@ -1,0 +1,42 @@
+.navigation {
+  background-color: $c-white;
+  z-index: 900;
+
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
+  &__list {
+    display: flex;
+    height: 100%;
+
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    margin-right: 30px;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: o;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

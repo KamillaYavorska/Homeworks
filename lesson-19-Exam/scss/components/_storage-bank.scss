@@ -1,0 +1,46 @@
+.storage-bank {
+  background-color: $c-storage-bgc;
+  margin-bottom: 120px;
+  border-radius: 50px;
+  display: grid;
+  grid-template-areas:
+    "image title"
+    "image text";
+  gap: 40px 130px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  &__title {
+    padding-top: 110px;
+    grid-area: title;
+    max-width: 500px;
+  }
+
+  &__text {
+    padding-bottom: 100px;
+    max-width: 500px;
+    grid-area: text;
+
+    @media (max-width: 768px) {
+      padding-bottom: 0;
+    }
+  }
+
+  &__image {
+    padding-left: 70px;
+    padding-top: 100px;
+    grid-area: image;
+    max-width: 400px;
+
+    @media (max-width: 768px) {
+      padding-bottom: 100px;
+      padding-left: 0;
+      padding-top: 0;
+    }
+  }
+}

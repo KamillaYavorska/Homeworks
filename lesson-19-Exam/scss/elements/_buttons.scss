@@ -1,0 +1,75 @@
+.arrow__button {
+  box-shadow: 0px 5px 5px 0px rgba(75, 93, 104, 0.1);
+  font-family: $ff-montserrat;
+  border: 1px solid $c-lilac;
+  background-color: $c-white;
+  @include font-size(16px);
+  border-radius: 50px;
+  white-space: nowrap;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  color: $c-purple;
+  max-width: 210px;
+  cursor: pointer;
+  display: flex;
+  padding: 20px;
+  height: 60px;
+
+  &__span {
+    margin-right: 20px;
+  }
+
+  &__image {
+    height: 14px;
+    width: 20px;
+  }
+
+  &:hover {
+    background-color: $c-lilac;
+    color: $c-white;
+  }
+  
+  &:hover svg path {
+    stroke: $c-white;
+  }
+}
+
+.button {
+  font-family: $ff-montserrat;
+  background-color: $c-lilac;
+  border: 1px solid $c-lilac;
+  border-radius: 50px;
+  text-align: center;
+  color: $c-white;
+  cursor: pointer;
+  width: 210px;
+  height: 60px;
+
+  &:hover {
+    background-color: $c-violet-middle;
+  }
+}
+
+.button-pink {
+  background-color: $c-pink;
+  border: 1px solid $c-pink;
+  color: $c-white;
+
+  &:hover {
+    background-color: $c-pink-middle;
+  }
+}
+
+.button-transparent {
+  background-color: transparent;
+  box-shadow: none;
+  font-weight: 700;
+  border: none;
+  height: 26px;
+  padding: 0;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
